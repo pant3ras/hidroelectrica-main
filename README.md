@@ -137,12 +137,11 @@ Integrarea necesită o licență validă. După configurarea contului, mergi la 
 - **Home Assistant** versiunea 2025.11 sau mai recentă.
 - **HACS** instalat (opțional, dar recomandat).
 - Un cont activ pe platforma Hidroelectrica România (aplicația iHidro sau contul online).
-- **Licență** validă — [hubinteligent.org/donate?ref=hidroelectrica](https://hubinteligent.org/donate?ref=hidroelectrica)
 
 ## Instalare
 
 ### Prin HACS
-1. Adaugă [depozitul personalizat](https://github.com/cnecrea/hidroelectrica) în HACS.
+1. Adaugă [depozitul personalizat](https://github.com/pant3ras/hidroelectrica-main) în HACS.
 
 [![Deschide instanța ta Home Assistant și accesează un depozit din cadrul magazinului comunitar Home Assistant (Home Assistant Community Store).](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=cnecrea&repository=hidroelectrica&category=Integration)
 
@@ -150,7 +149,7 @@ Integrarea necesită o licență validă. După configurarea contului, mergi la 
 3. Repornește Home Assistant și configurează integrarea.
 
 ### Instalare manuală
-1. Descarcă sau clonează [depozitul GitHub](https://github.com/cnecrea/hidroelectrica).
+1. Descarcă sau clonează [depozitul GitHub](https://github.com/pant3ras/hidroelectrica-main).
 2. Copiază folderul `custom_components/hidroelectrica` în directorul `custom_components` al Home Assistant.
 3. Repornește Home Assistant și configurează integrarea.
 
@@ -249,10 +248,10 @@ Dacă ți-a plăcut această integrare și vrei să sprijini munca depusă, **in
 
 ## Contribuții
 
-Contribuțiile sunt binevenite! Trimite un pull request sau raportează probleme [aici](https://github.com/cnecrea/hidroelectrica/issues).
+Contribuțiile sunt binevenite! Trimite un pull request sau raportează probleme [aici](https://github.com/pant3ras/hidroelectrica-main/issues).
 
 ---
 
 ## Suport
 
-Dacă îți place această integrare, oferă-i un ⭐ pe [GitHub](https://github.com/cnecrea/hidroelectrica/)!
+Dacă îți place această integrare, oferă-i un ⭐ pe [GitHub](https://github.com/pant3ras/hidroelectrica-main/)!
