@@ -26,7 +26,7 @@
 HACS (Home Assistant Community Store) permite instalarea integrărilor personalizate.
 
 1. **Verifică HACS** — Navighează la **Setări** → **Dispozitive și servicii** → **Integrări** și caută „HACS". Dacă nu este instalat, urmează [ghidul oficial HACS](https://hacs.xyz/docs/use).
-2. **Adaugă depozitul** — În HACS, apasă cele trei puncte din colțul dreapta-sus → **Repositories** → adaugă `https://github.com/cnecrea/hidroelectrica` cu tipul **Integration**.
+2. **Adaugă depozitul** — În HACS, apasă cele trei puncte din colțul dreapta-sus → **Repositories** → adaugă `https://github.com/pant3ras/hidroelectrica` cu tipul **Integration**.
 3. **Instalează** — Caută „Hidroelectrica România" în HACS → **Download**.
 4. **Repornește** Home Assistant.
 5. **Configurează** — **Setări** → **Dispozitive și servicii** → **Adaugă integrare** → caută „Hidroelectrica România" → introdu username și parola → selectează conturile dorite.
