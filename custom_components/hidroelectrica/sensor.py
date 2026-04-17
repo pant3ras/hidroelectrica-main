@@ -548,7 +548,7 @@ class HidroelectricaEntity(
         return DeviceInfo(
             identifiers={(DOMAIN, self._uan)},
             name=f"Hidroelectrica România ({self._uan})",
-            manufacturer="Ciprian Nicolae (cnecrea)",
+            manufacturer="C (pant3ras)",
             model="Hidroelectrica România",
             entry_type=DeviceEntryType.SERVICE,
         )

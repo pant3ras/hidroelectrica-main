@@ -2,10 +2,10 @@
 
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2025.11%2B-41BDF5?logo=homeassistant&logoColor=white)](https://www.home-assistant.io/)
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
-[![GitHub Release](https://img.shields.io/github/v/release/cnecrea/hidroelectrica)](https://github.com/cnecrea/hidroelectrica/releases)
-[![GitHub Stars](https://img.shields.io/github/stars/cnecrea/hidroelectrica?style=flat&logo=github)](https://github.com/cnecrea/hidroelectrica/stargazers)
-[![Instalări](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cnecrea/hidroelectrica/main/statistici/shields/descarcari.json)](https://github.com/cnecrea/hidroelectrica)
-[![Ultima versiune](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cnecrea/hidroelectrica/main/statistici/shields/ultima_release.json)](https://github.com/cnecrea/hidroelectrica/releases/latest)
+[![GitHub Release](https://img.shields.io/github/v/release/pant3ras/hidroelectrica)](https://github.com/pant3ras/hidroelectrica/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/pant3ras/hidroelectrica?style=flat&logo=github)](https://github.com/pant3ras/hidroelectrica/stargazers)
+[![Instalări](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/pant3ras/hidroelectrica/main/statistici/shields/descarcari.json)](https://github.com/pant3ras/hidroelectrica)
+[![Ultima versiune](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/pant3ras/hidroelectrica/main/statistici/shields/ultima_release.json)](https://github.com/pant3ras/hidroelectrica/releases/latest)
 
 Integrare Home Assistant pentru **monitorizarea completă** a conturilor Hidroelectrica România. Suport complet pentru conturi de consum și conturi de **prosumator**, cu detectare automată și senzori dedicați. Datele sunt obținute prin platforma SEW (Smart Energy Water) și sunt actualizate periodic.
 
@@ -143,7 +143,7 @@ Integrarea necesită o licență validă. După configurarea contului, mergi la 
 ### Prin HACS
 1. Adaugă [depozitul personalizat](https://github.com/pant3ras/hidroelectrica-main) în HACS.
 
-[![Deschide instanța ta Home Assistant și accesează un depozit din cadrul magazinului comunitar Home Assistant (Home Assistant Community Store).](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=cnecrea&repository=hidroelectrica&category=Integration)
+[![Deschide instanța ta Home Assistant și accesează un depozit din cadrul magazinului comunitar Home Assistant (Home Assistant Community Store).](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=pant3ras&repository=hidroelectrica&category=Integration)
 
 2. Caută integrarea **Hidroelectrica România** și instaleaz-o.
 3. Repornește Home Assistant și configurează integrarea.
@@ -242,7 +242,7 @@ custom_components/hidroelectrica/
 
 Dacă ți-a plăcut această integrare și vrei să sprijini munca depusă, **invită-mă la o cafea**!
 
-<!-- [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Susține%20dezvoltatorul-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/cnecrea) -->
+<!-- [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Susține%20dezvoltatorul-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/pant3ras) -->
 
 ---
 

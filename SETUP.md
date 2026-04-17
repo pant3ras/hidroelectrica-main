@@ -19,7 +19,7 @@
 2. Apasă pe cele **trei puncte** din colțul dreapta-sus → **Custom repositories**.
 3. Introdu URL-ul depozitului:
    ```
-   https://github.com/cnecrea/hidroelectrica
+   https://github.com/pant3ras/hidroelectrica
    ```
 4. Selectează tipul: **Integration** → **Add**.
 5. Caută **Hidroelectrica România** în lista de integrări HACS → **Download**.
@@ -27,13 +27,13 @@
 
 Alternativ, apasă direct pe butonul de mai jos:
 
-[![Deschide HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=cnecrea&repository=hidroelectrica&category=Integration)
+[![Deschide HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=pant3ras&repository=hidroelectrica&category=Integration)
 
 ### Varianta B: Instalare manuală
 
 1. Descarcă sau clonează depozitul:
    ```bash
-   git clone https://github.com/cnecrea/hidroelectrica.git
+   git clone https://github.com/pant3ras/hidroelectrica.git
    ```
 2. Copiază folderul `custom_components/hidroelectrica` în directorul `custom_components` al Home Assistant:
    ```

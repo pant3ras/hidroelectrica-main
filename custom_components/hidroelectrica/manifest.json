@@ -2,13 +2,13 @@
   "domain": "hidroelectrica",
   "name": "Hidroelectrica România",
   "codeowners": [
-    "@cnecrea"
+    "@pant3ras"
   ],
   "config_flow": true,
   "dependencies": [],
-  "documentation": "https://github.com/cnecrea/hidroelectrica",
+  "documentation": "https://github.com/pant3ras/hidroelectrica",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/cnecrea/hidroelectrica/issues",
+  "issue_tracker": "https://github.com/pant3ras/hidroelectrica/issues",
   "requirements": [],
   "version": "3.8.4"
 }
