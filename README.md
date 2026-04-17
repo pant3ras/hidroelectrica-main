@@ -242,7 +242,7 @@ custom_components/hidroelectrica/
 
 Dacă ți-a plăcut această integrare și vrei să sprijini munca depusă, **invită-mă la o cafea**!
 
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Susține%20dezvoltatorul-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/cnecrea)
+<!-- [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Susține%20dezvoltatorul-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/cnecrea) -->
 
 ---
 
