@@ -585,15 +585,19 @@ def _build_sensors_for_coordinator(
             uan,
         )
 
-    # ── 2. Arhivă consum (GetUsageGeneration) — ultimul an ──
+    # Senzorii de arhivă se creează pentru FIECARE an primit de la API, nu doar
+    # pentru ultimul: graficele comparative (luna aceasta vs. aceeași lună de anul
+    # trecut) au nevoie și de anul precedent.
+
+    # ── 2. Arhivă consum (GetUsageGeneration) — toți anii disponibili ──
     usage_years = _extract_usage_years(coordinator.data)
     if usage_years:
-        max_year = max(usage_years.keys())
-        sensors.append(ArhivaConsumSensor(coordinator, config_entry, max_year))
-        _LOGGER.debug(
-            "ArhivaConsumSensor creat: an=%s, luni=%s (UAN=%s).",
-            max_year, len(usage_years[max_year]), uan,
-        )
+        for year in sorted(usage_years):
+            sensors.append(ArhivaConsumSensor(coordinator, config_entry, year))
+            _LOGGER.debug(
+                "ArhivaConsumSensor creat: an=%s, luni=%s (UAN=%s).",
+                year, len(usage_years[year]), uan,
+            )
     else:
         current_year = datetime.now().year
         sensors.append(ArhivaConsumSensor(coordinator, config_entry, current_year))
@@ -605,7 +609,7 @@ def _build_sensors_for_coordinator(
     # ── 3. Prosumator — deja detectat mai sus (is_prosumer) ──
     has_production = is_prosumer
 
-    # ── 4. Arhivă index consum (GetMeterReadHistory) — ultimul an ──
+    # ── 4. Arhivă index consum (GetMeterReadHistory) — toți anii disponibili ──
     # La prosumator filtrăm pe 1.8.0 (consum) — altfel se amestecă cu producția
     consum_filter = "1.8.0" if has_production else None
     mrh_years = _extract_meter_read_years(coordinator.data, register_filter=consum_filter)
@@ -617,12 +621,12 @@ def _build_sensors_for_coordinator(
         uan,
     )
     if mrh_years:
-        max_year = max(mrh_years.keys())
-        sensors.append(ArhivaIndexSensor(coordinator, config_entry, max_year, register_filter=consum_filter))
-        _LOGGER.debug(
-            "ArhivaIndexSensor creat: an=%s, citiri=%s, filtru=%s (UAN=%s).",
-            max_year, len(mrh_years[max_year]), consum_filter, uan,
-        )
+        for year in sorted(mrh_years):
+            sensors.append(ArhivaIndexSensor(coordinator, config_entry, year, register_filter=consum_filter))
+            _LOGGER.debug(
+                "ArhivaIndexSensor creat: an=%s, citiri=%s, filtru=%s (UAN=%s).",
+                year, len(mrh_years[year]), consum_filter, uan,
+            )
     else:
         # Creăm oricum cu anul curent — se va popula la primul heavy refresh
         current_year = datetime.now().year
@@ -660,15 +664,15 @@ def _build_sensors_for_coordinator(
             "Non-prosumator (UAN=%s): nu s-a detectat registrul 1.8.0_P.", uan,
         )
 
-    # ── 6. Arhivă plăți normale (utilizator → companie) — ultimul an ──
+    # ── 6. Arhivă plăți normale (utilizator → companie) — toți anii disponibili ──
     normal_years = _extract_payment_years(coordinator.data, channel_filter="normal")
     if normal_years:
-        max_year = max(normal_years.keys())
-        sensors.append(ArhivaPlatiSensor(coordinator, config_entry, max_year))
-        _LOGGER.debug(
-            "ArhivaPlatiSensor creat: an=%s, plăți=%s (UAN=%s).",
-            max_year, len(normal_years[max_year]), uan,
-        )
+        for year in sorted(normal_years):
+            sensors.append(ArhivaPlatiSensor(coordinator, config_entry, year))
+            _LOGGER.debug(
+                "ArhivaPlatiSensor creat: an=%s, plăți=%s (UAN=%s).",
+                year, len(normal_years[year]), uan,
+            )
     else:
         current_year = datetime.now().year
         sensors.append(ArhivaPlatiSensor(coordinator, config_entry, current_year))

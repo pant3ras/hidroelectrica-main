@@ -38,16 +38,18 @@ Integrare Home Assistant pentru **monitorizarea completă** a conturilor Hidroel
 
 ### Senzori de arhivă
 
-**Arhivă consum** *(anul cel mai recent)*
+Senzorii de arhivă de consum, index și plăți se creează câte unul **pentru fiecare an** primit de la API (`{an} → Arhivă ...`), ca anul curent să poată fi comparat lună cu lună cu anul precedent.
+
+**Arhivă consum** *(câte un senzor pe an)*
 - Consumul lunar din datele de utilizare (`GetUsageGeneration`).
 - Atribute: consum pe fiecare lună disponibilă, total anual.
 
-**Arhivă index** *(anul cel mai recent)*
+**Arhivă index** *(câte un senzor pe an)*
 - Istoricul citirilor de index din `GetMeterReadHistory`.
 - La prosumator, filtrează automat doar registrul 1.8.0 (consum), excluzând producția.
 - Atribute: fiecare citire cu data, indexul, tipul citirii (autocitire/distribuitor/estimare).
 
-**Arhivă plăți** *(anul cel mai recent)*
+**Arhivă plăți** *(câte un senzor pe an)*
 - Plățile efective realizate de utilizator către companie (canale de tip `Incasari-*`).
 - Atribute: fiecare plată cu luna, canalul de plată, suma; total plăți, sumă totală.
 
